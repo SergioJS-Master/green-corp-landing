@@ -112,7 +112,7 @@ button {
   text-align: center;
   display: flex; 
   justify-content: center; 
-   align-items: center; 
+  align-items: center; 
 }
 
 .form h1 {
@@ -201,10 +201,146 @@ footer {
   padding-bottom: 15px;
 }
 
- .footer__copyright { 
+.footer__copyright { 
   margin-top: 40px;
   text-align: center;
   opacity: 0.5;
+}
+
+.features {
+  background-color: rgb(255, 255, 255);
+  padding: 115px 60px 115px 60px;
+  
+ 
+}
+.card{
+  padding: 35px 40px 25px 40px;
+  margin: 40px;
+  border: 2px solid #D9E4E6;
+  border-radius: 5px;
+  line-height: 22px;
+  opacity: 0.8;
+}
+.card__logo_color1 {
+  color: #ffb406;
+}
+.card__logo_color2 {
+  color: #ad1714;
+}
+.card__logo_color3 {
+  color: #22a030;
+}
+.cards {
+  display: flex;
+}
+.cards p {
+font-size: 16px;
+}
+.card__logo  {
+  width: 100px;
+  height: 100px;
+  font-size: 32px;
+  font-weight: 700;
+  background-color: #eaeff9;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.features__border {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: solid 1px #E6EAF4;
+}
+.features__feedback {
+  display: flex;
+  justify-content: space-evenly;
+}
+.features__feedback-left {
+  margin-right: 10px;
+}
+.features__feedback-left h2 {
+  font-size: 48px;
+}
+.features__feedback-left p {
+  font-size: 18px;
+  line-height: 26px;
+  opacity: 0.7;
+}
+.features__feedback-right {
+  display: flex;
+  /* margin-left: 100px; */
+}
+.features__box {
+  padding: 30px 40px 25px 40px;
+  color:rgb(255, 255, 255);
+  border-radius: 25px;
+}
+.features__box h3 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 48px;
+}
+.features__savings-box {
+  background-color: #dc5e26;
+  box-shadow: 0px 6px 0px 0px rgb(221 95 38 / 20%);
+  margin-right: 30px;
+}
+.features__rate-box {
+ background-color: #1D263A;  
+ box-shadow: 0px 6px 0px 0px rgb(29 38 58 / 20%);
+}
+.stars {
+ color: #ff7039;
+}
+.promo {
+  display: flex;
+  min-height: 500px;
+}
+.promo__image {
+  background-image: url('./img/promo.jpg');
+  width: 50%;
+  flex-shrink: 0;
+  background-size: cover;
+}
+.promo__right {
+  padding: 160px 60px 160px 60px;
+  background-color: #dd5f26;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+.promo__right .card {
+  background-color: white;
+  padding: 30px 40px 30px 40px;
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 700;
+  border-radius: 25px;
+  opacity: 1;
+}
+.promo__right .card p {
+  opacity: 80%;
+}
+.promo__right .card p::before {
+  font-size: 20px;
+  color: #ec6b29;
+  margin-right: 10px;
+  content: "☼";
+}
+.btnContainer {
+  color: #107b1c;
+  margin-top: 20px;
+  font-size: 18px;
+  padding: 15px 30px 15px 30px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+
+}
+.btnContainer i {
+  font-size: 15px;
+  margin-right: 5px;
 }
 
 @media (max-width: 1024px) {
@@ -258,7 +394,6 @@ footer {
       width: 75px;
       height: 75px;
   }
-
   .form {
       padding: 50px 10px;
   }
@@ -274,4 +409,57 @@ footer {
   .footer__container {
       flex-direction: column;
   }
+  .features {
+      padding: 50px 10px 50px 10px; 
+  }
+  .cards {
+      padding: 50px 10px 50px 10px;
+      flex-direction: column;
+  }
+  .card {
+      padding: 50px 10px 50px 10px;
+      margin: 5px;
+  }
+  .features__feedback {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .features__feedback-left {
+    margin-right: 0px;
+  }
+  .features__feedback-left h2 {
+    font-size: 36px;
+  }
+  .features__feedback-right {
+    flex-direction: column;
+  }
+  .features__box h3 {
+    margin-top: 0px 0px 20px 0px;
+    font-size: 36px;
+  }
+  .features__savings-box {
+     margin-right: 0px;
+     margin-bottom: 30px;
+  }
+  .promo__image {
+     height: 500px;
+     width: 100%;
+  }
+  .promo {
+    flex-direction: column-reverse;
+}
+.promo__right .card {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.promo__right {
+  padding: 20px 10px 20px 10px
+}
+.promo__image {
+    height: 300px;
+    width: 100%;
+    background-position: center;
+} 
 }
